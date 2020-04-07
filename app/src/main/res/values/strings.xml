@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">USSA-1.0.2</string>
+    <string name="todo">TODO</string>
+    <string name="sekuntikello">Sekuntikello</string>
+    <string name="timetemplate">00:02:04.44</string>
+    <string name="kierros_2_template">Kierros: 2</string>
+    <string name="liike_template">Penkkipunnerrus</string>
+    <string name="painot_903kg_template">Painot: 903kg</string>
+    <string name="toistot_9_template">Toistot: 9</string>
+    <string name="sarjat_4_temmplate">Sarjat: 4</string>
 </resources>
