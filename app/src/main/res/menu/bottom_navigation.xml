@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/omatharjoitukset"
+        android:icon="@drawable/home"
+        android:title="Harjoitukset"/>
+    <item
+        android:id="@+id/harjoitusnakuma"
+        android:icon="@drawable/barbell"
+        android:title="harjoitusnakuma"/>
+    <item
+        android:id="@+id/kalenteri"
+        android:icon="@drawable/calendaricon"
+        android:title="kalenteri"/>
+    <item
+        android:id="@+id/kraafi"
+        android:icon="@drawable/linechart"
+        android:title="kraafi"/>
+
+</menu>
