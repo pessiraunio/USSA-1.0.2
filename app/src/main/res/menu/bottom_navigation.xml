@@ -3,8 +3,12 @@
 
     <item
         android:id="@+id/omatharjoitukset"
+        android:checkable="false"
+        android:checked="false"
         android:icon="@drawable/home"
-        android:title="Harjoitukset"/>
+        android:iconTint="#000000"
+        android:iconTintMode="multiply"
+        android:title="Harjoitukset" />
     <item
         android:id="@+id/harjoitusnakuma"
         android:icon="@drawable/barbell"

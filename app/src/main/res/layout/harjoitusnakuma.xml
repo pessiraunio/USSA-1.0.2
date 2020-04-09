@@ -133,8 +133,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="@color/colorUSSAkeltainen"
-        android:foreground="@android:drawable/btn_dialog"
-        android:foregroundGravity="fill_horizontal|center|fill_vertical"
+        android:foreground="@drawable/xsign"
+        android:foregroundGravity="center"
         android:foregroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
@@ -151,7 +151,7 @@
         android:foreground="@drawable/squarebox"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -186,8 +186,8 @@
 
     <TextView
         android:id="@+id/textViewMovementName"
-        android:layout_width="142dp"
-        android:layout_height="34dp"
+        android:layout_width="135dp"
+        android:layout_height="24dp"
         android:text="@string/liike_template"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
@@ -205,78 +205,79 @@
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintVertical_bias="0.575"
         app:srcCompat="@drawable/myroutinesbox" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="159dp"
-        android:layout_height="53dp"
+        android:layout_width="165dp"
+        android:layout_height="55dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.285"
+        app:layout_constraintVertical_bias="0.615"
         app:srcCompat="@drawable/myroutinesbox" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="165dp"
-        android:layout_height="60dp"
+        android:layout_height="55dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="@+id/textViewWeights"
         app:layout_constraintEnd_toEndOf="@+id/textViewWeights"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/textViewWeights"
         app:layout_constraintTop_toTopOf="@+id/textViewWeights"
-        app:layout_constraintVertical_bias="0.371"
+        app:layout_constraintVertical_bias="0.354"
         app:srcCompat="@drawable/myroutinesbox" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="95dp"
-        android:layout_height="32dp"
+        android:layout_width="72dp"
+        android:layout_height="29dp"
         android:text="@string/sarjat_4_temmplate"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.755" />
+        app:layout_constraintVertical_bias="0.785" />
 
     <TextView
         android:id="@+id/textViewWeights"
-        android:layout_width="119dp"
-        android:layout_height="25dp"
+        android:layout_width="115dp"
+        android:layout_height="24dp"
         android:text="@string/painot_903kg_template"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.266" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="79dp"
-        android:layout_height="25dp"
+        android:layout_width="82dp"
+        android:layout_height="22dp"
         android:text="@string/toistot_9_template"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.491" />
+        app:layout_constraintVertical_bias="0.533" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
