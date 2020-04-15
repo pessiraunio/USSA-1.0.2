@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tausta"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,11 +13,11 @@
         android:layout_width="415dp"
         android:layout_height="735dp"
         android:contentDescription="@string/todo"
+        android:foreground="@drawable/layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/layout" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view2"
@@ -33,7 +32,20 @@
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.454" />
+        app:layout_constraintVertical_bias="0.384" />
+
+
+    <Chronometer
+        android:id="@+id/chronometer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.459" />
 
     <TextView
         android:id="@+id/textView"
@@ -48,37 +60,20 @@
         app:layout_constraintTop_toTopOf="@+id/view2"
         app:layout_constraintVertical_bias="0.13" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="189dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="2dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/timetemplate"
-        android:inputType="time"
-        android:textSize="33sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.104" />
 
     <TextView
         android:id="@+id/textView3_StopWatchLapCount"
-        android:layout_width="97dp"
+        android:layout_width="77dp"
         android:layout_height="28dp"
-        android:layout_marginStart="6dp"
         android:text="@string/kierros_2_template"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toStartOf="@+id/editText"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.562" />
 
     <Button
         android:id="@+id/buttonStopWatchPlay"
@@ -88,6 +83,7 @@
         android:backgroundTint="@color/colorUSSAkeltainen"
         android:foreground="@drawable/playbutton"
         android:foregroundGravity="center"
+        android:onClick="startChronometer"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.037"
@@ -104,6 +100,7 @@
         android:backgroundTint="@color/colorUSSAkeltainen"
         android:foreground="@drawable/pause"
         android:foregroundGravity="center"
+        android:onClick="pauseChronometer"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.33"
@@ -136,6 +133,7 @@
         android:foreground="@drawable/xsign"
         android:foregroundGravity="center"
         android:foregroundTint="#000000"
+        android:onClick="resetChronometer"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.976"
@@ -203,39 +201,42 @@
         android:layout_width="165dp"
         android:layout_height="55dp"
         android:contentDescription="@string/todo"
+        android:foreground="@drawable/myroutinesbox"
+        android:foregroundGravity="clip_horizontal|center"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.575"
-        app:srcCompat="@drawable/myroutinesbox" />
+        app:layout_constraintVertical_bias="0.575" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="165dp"
         android:layout_height="55dp"
         android:contentDescription="@string/todo"
+        android:foreground="@drawable/myroutinesbox"
+        android:foregroundGravity="clip_horizontal|center"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.615"
-        app:srcCompat="@drawable/myroutinesbox" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="165dp"
         android:layout_height="55dp"
         android:contentDescription="@string/todo"
+        android:foreground="@drawable/myroutinesbox"
+        android:foregroundGravity="clip_horizontal|center"
         app:layout_constraintBottom_toBottomOf="@+id/textViewWeights"
         app:layout_constraintEnd_toEndOf="@+id/textViewWeights"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/textViewWeights"
         app:layout_constraintTop_toTopOf="@+id/textViewWeights"
-        app:layout_constraintVertical_bias="0.354"
-        app:srcCompat="@drawable/myroutinesbox" />
+        app:layout_constraintVertical_bias="0.354" />
 
     <TextView
         android:id="@+id/textView6"
