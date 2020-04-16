@@ -8,4 +8,9 @@
     <string name="painot_903kg_template">Painot: 903kg</string>
     <string name="toistot_9_template">Toistot: 9</string>
     <string name="sarjat_4_temmplate">Sarjat: 4</string>
+    <string name="kehityksen_seuranta">Kehityksen seuranta</string>
+    <string name="laatikko">laatikko</string>
+    <string name="ristikko">ristikko</string>
+    <string name="viikot">Viikot</string>
+    <string name="kg">KG</string>
 </resources>
